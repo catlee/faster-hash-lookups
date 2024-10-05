@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+import "entry.proto";
+
+message PBArray {
+  repeated Entry entries = 1;
+}
+

@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+import "entry.proto";
+
+message PBCHDHash {
+  repeated Entry entries = 1;
+  repeated int32 seeds = 2;
+  int32 m = 3;
+  int32 r = 4;
+  // Ideally we have some specifier as to the hash function used for keys
+}
